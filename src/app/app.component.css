@@ -1,0 +1,67 @@
+.main {
+    margin-top: 64px;
+    padding: 15px 0 25px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #2793A8;
+}
+
+.example-card {
+    max-width: 500px;
+}
+
+.mat-card-title {
+    text-align: center;
+}
+
+.mat-card {
+    padding: 50px;
+}
+
+/* .menta{
+    background:#7CD0E1;
+    color: #ffffff;
+} */
+
+.content-qualification {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+label {
+    color: grey;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.clasificacion {
+    direction: rtl;
+    /* right to left */
+    unicode-bidi: bidi-override;
+    /* bidi de bidireccional */
+}
+
+label:hover {
+    color: orange;
+}
+
+label:hover~label {
+    color: orange;
+}
+
+input[type="radio"]:checked~label {
+    color: orange;
+}
+
+@media only screen and (max-width: 599px) {
+    .main {
+        margin-top: 56px;
+    }
+}
